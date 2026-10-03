@@ -1,0 +1,44 @@
+{
+    "name": "omnischolar/crossref",
+    "type": "library",
+    "description": "Omnischolar Crossref: the reference metadata of any Crossref DOI, the works deposited with an ORCID, a bibliographic search - no key, in the polite pool with a mailto.",
+    "keywords": [
+        "scholarly",
+        "publications",
+        "crossref",
+        "doi",
+        "metadata",
+        "omnischolar"
+    ],
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnischolar": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnischolar\\Crossref\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnischolar\\Crossref\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
